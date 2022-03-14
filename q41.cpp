@@ -10,6 +10,9 @@ int main()
   cout<<"3. Area of a Triangle\n";
   cout<<"4. None of them\n";
   cin>>selections;
+
+  // Calculate the real area with the input value
+  
   switch(selections)
     {
     case 1:
