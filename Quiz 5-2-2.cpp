@@ -19,14 +19,21 @@ while(1>=M || M>=10){
     cout << "Invalid Input. Try again." << endl;
   }
 }
+
+// No need to repeat result = 0 or result = N;
+// What is the purpose of this loop?
 for(int i=0;i<=M;i++){
     if(i==0){
     result=0;
-}
+  }
     else{
         result=N;
     }
 }
+// after the above code, result will be N if M is not 0
+// Thus simply,
+result = ( M == 0) ? 0 : N
+
 for(int c=1;c<=i;c++){
     result =result * N;
 }
