@@ -15,17 +15,7 @@ int main() {
     exit(0);
   }
   ifs>>numofstudent;
-  tsum = 0;
-    tavg = 0;
-    for(int i=0; i<numofstudent; i++){
-        ifs>>studentname>>score1>>score2;
-        sum = score1+score2;
-        tsum += sum;
-    }
-    tavg = tsum/numofstudent;
-    cout<<"The sum of all students is "<<tsum<<endl;
-    cout<<"The average of all students is "<<tavg<<endl;
-    
+    cout<<"The total number of students is "<<numofstudent<<endl;
     int count = 0;  
     for(int i=0; i<numofstudent; i++){
         ifs>>studentname>>score1>>score2;
