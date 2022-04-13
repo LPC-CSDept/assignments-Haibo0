@@ -1,4 +1,5 @@
 
+
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -30,7 +31,7 @@ int isGreater(int n)
 {
     int num;
     if(num>n)
-        return num;
+        return 1;
     else
         return 0;
 }
