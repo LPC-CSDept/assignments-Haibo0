@@ -6,11 +6,11 @@ using namespace std;
 int getRdnum( );
 int getRdnum(n1);
 int getRdnum(n1,n2); 
-int main()
-{
-    int num;
-    cout<<"The random number is "<<num<<endl;
-   
+int main(){
+   cout<<getRdnum()<<endl;
+   cout<<getRdnum(n1)<<endl;
+   cout<<getRdnum(n1,n2)<<endl;
+  
 }
 int getRdnum( )
 {
