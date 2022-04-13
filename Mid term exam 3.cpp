@@ -30,10 +30,18 @@ int getRdnum(void)
 int isGreater(int n)
 {
     int num;
-    if(num>n)
+    if(n>num)
+    {
+        num = n;
         return 1;
+    }
     else
+    {
+        num = n;
         return 0;
+    }
+    return 1;
 }
+
 
 
