@@ -19,12 +19,16 @@ int getInput(int &n1, int &n2)
     cin >> n1 >> n2;
     return 0;
 }
-int isSame(int n1, int n2)
+int intDivision(int n1, int n2)
 {
-    if (n1 == n2)
-        return 1;
-    else
-        return 0;
+    int result;
+  if(n1>n2){
+    result = n1 / n2;}
+   else
+   {
+    result=n2/n1;
+   }
+    return result;
 }
 int intDivision(int n1, int n2)
 {
