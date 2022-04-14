@@ -21,6 +21,9 @@ int main() {
         ifs>>studentname>>score1>>score2;
         sum = score1+score2;
         avg = sum/2;
+        cout << "Student Name: " << studentname << endl;
+        cout << "Score #1: " << score1 << "     " << "Score #2: " << score2 << endl;
+        cout << "Sum of Scores: " << sum << "      " << "Average: " << avg << endl;
         if(avg>80)
             count++;
     }
