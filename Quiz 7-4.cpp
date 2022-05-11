@@ -29,27 +29,21 @@ void printvector(vector<int> vec)
     	     cout << v << "\t";
 	cout << endl;
 }
-void deleteone(vector<int> &vec)
+void deleteone(vector<int>&vec)
 {
-int usernum;
-cout<<"Enter element to be deleted: ";
-cin>>usernum;
-  
-vector<int>::iterator it;
-  
-it = std::find(vec.begin(), vec.end(), usernum);
-int deletecnt = 0;
-  
-while(it!= vec.end())
-{
-vec.erase(it);
-  
-deletecnt++;
-
-it = std::find(vec.begin(), vec.end(), usernum);
-}
-  
-cout<<usernum<<" is deleted "<<deletecnt<<" times \n";
-printvector(vec);
-  
+    int usernum,deletecnt=0;
+    cin>>usernum;// taking input from the user
+    for(int i=0;i<vec.size();i++)  // traversing the loop
+    {
+        if(vec[i]==usernum)
+        {
+            // if the element is found erase it
+            vec.erase(vec.begin()+i);
+            deletecnt++;  // increase the count value by +1 
+        }
+    }
+    // diplaying result
+    cout<<usernum<<" is deleted "<<deletecnt<<" times"<<endl;
+   printvector(vec);
+   
 }
