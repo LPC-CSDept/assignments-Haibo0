@@ -32,18 +32,19 @@ void printvector(vector<int> vec)
 void deleteone(vector<int>&vec)
 {
     int usernum,deletecnt=0;
-    cin>>usernum;// taking input from the user
-    for(int i=0;i<vec.size();i++)  // traversing the loop
+    cin>>usernum;
+//swap userunm to the last element and delete the last element
+    for(int i=0; i<vec.size(); i++)
     {
-        if(vec[i]==usernum)
+        if(vec[i] == usernum)
         {
-            // if the element is found erase it
-            vec.erase(vec.begin()+i);
-            deletecnt++;  // increase the count value by +1 
+            swap(vec[i],vec[vec.size()-1]);
+            vec.pop_back();
+            deletecnt++;
         }
-    }
-    // diplaying result
+    }  
+
     cout<<usernum<<" is deleted "<<deletecnt<<" times"<<endl;
-   printvector(vec);
+   printvector(vec); 
    
 }
